@@ -24,7 +24,9 @@ form.onsubmit = (event) => {
   button.className = "del";
   li.append(button);
 
-  list.onclick = (event) => {
+  console.log(list);
+};
+ list.onclick = (event) => {
     let isRemoveLI = event.target.className === "del";
 
     if (isRemoveLI) {
@@ -32,6 +34,3 @@ form.onsubmit = (event) => {
       listOfUsersBlock.remove();
     }
   };
-
-  console.log(list);
-};
